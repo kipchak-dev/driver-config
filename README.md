@@ -1,12 +1,12 @@
 # HTTP Driver for Kipchak
 
-This driver is an HTTP client based on the illuminate/http package that ships with Laravel.
+This driver is a Config management driver for Kipchak.
 
-It is used to make HTTP requests within Kipchak.
+It is bundled into Kipchak and does not need to be installed separately.
 
 #### Composer Package 
 
-`kipchak/driver-http`
+`kipchak/driver-config`
 
 #### Sample Config File:
 
@@ -14,17 +14,15 @@ This driver does not require any configuration.
 
 ## How to use it?
 
-Install it via composer: `composer require kipchak/driver-http`.
+Install it via composer: `composer require kipchak/driver-config`.
 
 ### Example Usage
 
 ```php
 // Load the HTTP driver.
-$http = \Mamluk\Kipchak\Driver\Http\Driver::get()
+$http = \Mamluk\Kipchak\Driver\Config\Driver::get('file_name_without_extension')
 // Use the HTTP client ($http) client as you normally would.
 ```
-See the methods available in the client here: https://laravel.com/docs/12.x/http-client. All methods
-in the Laravel documentation called via `Http::method()` are available via `$http->method() in Kipchak.
 
 ## What is a Kipchak Driver?
 
@@ -47,5 +45,3 @@ for instance, in the case of multiple database connections or S3 buckets.
 
 So you may access the driver by invoking \Mamluk\Kipchak\Driver\Http\Driver::get('default'), where 
 `default` is the name of the connection specified in the config file.
-
-**NOTE: This driver does not require any configuration.**
