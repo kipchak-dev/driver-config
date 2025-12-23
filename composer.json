@@ -1,0 +1,27 @@
+{
+    "name": "kipchak/driver-config",
+    "type": "middleware",
+    "description": "A Config Management Kipchak driver (dependency) for the Kipchak API Development Kit (ADK)",
+    "keywords": [
+        "APIs",
+        "HTTP",
+        "Microservices",
+        "Mamluk",
+        "Configuration"
+    ],
+    "homepage": "https://mamluk.net",
+    "license": "MIT",
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Mamluk\\Kipchak\\Driver\\Config\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "mamluk/kipchak": "2.x-dev"
+    }
+}
