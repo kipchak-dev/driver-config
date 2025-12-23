@@ -21,7 +21,7 @@ class Driver implements Interfaces\Driver
 
     public static function set(): void
     {
-        self::$container->set('config', function(ContainerInterface $c): array {
+        self::$container->set('drivers.config', function(ContainerInterface $c): array {
             $configPath = realpath(__DIR__ . '/../../../../config/');
 
             $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($configPath));
@@ -45,7 +45,7 @@ class Driver implements Interfaces\Driver
      */
     public static function get(?string $configKey = null): array
     {
-        $config = self::$container->get('config');
+        $config = self::$container->get('drivers.config');
         if ($configKey === null) {
             return $config;
         } else {
