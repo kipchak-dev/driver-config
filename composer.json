@@ -16,7 +16,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Mamluk\\Kipchak\\Driver\\Config\\": "src/"
+            "Kipchak\\Driver\\Config\\": "src/"
         }
     },
     "minimum-stability": "dev",

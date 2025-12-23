@@ -1,14 +1,14 @@
 <?php
 
-namespace Mamluk\Kipchak\Driver\Config;
+namespace Kipchak\Driver\Config;
 
-use Mamluk\Kipchak\Interfaces;
+use Kipchak\Core\Interfaces;
 use Psr\Container\ContainerExceptionInterface;
 use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use function Mamluk\Kipchak\config;
+use function Kipchak\Core\config;
 
 class Driver implements Interfaces\Driver
 {
