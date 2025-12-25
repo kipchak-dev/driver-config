@@ -10,7 +10,7 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use function Kipchak\Core\config;
 
-class Driver implements Interfaces\Driver
+class Config implements Interfaces\Driver
 {
     protected static ContainerInterface $container;
 
