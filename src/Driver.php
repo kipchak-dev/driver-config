@@ -41,10 +41,12 @@ class Driver implements Interfaces\Driver
     }
 
     /**
+     * @param string|null $configKey
+     * @param string|null $configFileName
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      */
-    public static function get(?string $configKey = null): array
+    public static function get(?string $configKey = null, ?string $configFileName = null,): array
     {
         $config = self::$container->get('drivers.config');
         if ($configKey === null) {
