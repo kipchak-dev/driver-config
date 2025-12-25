@@ -14,7 +14,7 @@ class Driver implements Interfaces\Driver
 {
     protected static ContainerInterface $container;
 
-    public static function initialise(ContainerInterface $container): void
+    public static function initialise(ContainerInterface $container, ?string $configFileName = null): void
     {
         self::$container = $container;
         self::set();
@@ -46,7 +46,7 @@ class Driver implements Interfaces\Driver
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      */
-    public static function get(?string $configKey = null, ?string $configFileName = null,): array
+    public static function get(?string $configKey = null): array
     {
         $config = self::$container->get('drivers.config');
         if ($configKey === null) {
