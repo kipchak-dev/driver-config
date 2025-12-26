@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "45c2a3a5d5a07276cd2e0c020e04e462",
+    "content-hash": "17b120f99b6579920a070a47abbb9384",
     "packages": [
         {
             "name": "cuyz/valinor",
@@ -142,11 +142,11 @@
         },
         {
             "name": "kipchak/core",
-            "version": "2.x-dev",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "0f281087fc476a80864b4aa8bcb73a320c150da3"
+                "reference": "8ea34fa8ce593f705a63faca4fd5eee82259198d"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
@@ -175,7 +175,7 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2025-12-25T08:02:10+00:00"
+            "time": "2025-12-25T10:26:38+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -1520,9 +1520,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "kipchak/core": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},
