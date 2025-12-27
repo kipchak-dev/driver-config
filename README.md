@@ -2,8 +2,6 @@
 
 This driver is a Config management driver for Kipchak.
 
-It is bundled into Kipchak and does not need to be installed separately.
-
 #### Composer Package 
 
 `kipchak/driver-config`
