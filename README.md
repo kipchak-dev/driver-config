@@ -1,6 +1,6 @@
 # Config Driver for Kipchak
 
-This driver is a Config management driver for Kipchak.
+This is a Config management driver for Kipchak.
 
 #### Composer Package 
 
