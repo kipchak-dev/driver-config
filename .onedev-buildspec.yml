@@ -13,6 +13,7 @@ jobs:
     useTTY: true
     condition: SUCCESSFUL
     optional: false
+  jobExecutor: default
   retryCondition: never
   maxRetries: 3
   retryDelay: 30
