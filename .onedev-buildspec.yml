@@ -1,0 +1,19 @@
+version: 43
+jobs:
+- name: Update Composer Package
+  steps:
+  - type: CommandStep
+    name: Update Composer Package
+    runInContainer: true
+    image: 1x.ax/meezaan/library/cicd
+    interpreter:
+      type: DefaultInterpreter
+      commands: |
+        curl -XPOST -H'content-type:application/json' 'https://packagist.org/api/update-package?username=meezaan&apiToken=fb584cbcc4c1f99f14e4ec31f03605092f32ea05' -d'{"repository":{"url":"https://packagist.org/packages/kipchak/driver-config"}}'
+    useTTY: true
+    condition: SUCCESSFUL
+    optional: false
+  retryCondition: never
+  maxRetries: 3
+  retryDelay: 30
+  timeout: 14400
