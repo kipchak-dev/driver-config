@@ -18,7 +18,7 @@ Install it via composer: `composer require kipchak/driver-config`.
 
 ```php
 // Load the Config driver.
-$config = \Mamluk\Kipchak\Driver\Config\Config::get('file_name_without_extension');
+$config = Kipchak\Driver\Config\Config::get('file_name_without_extension');
 // $config is now the loaded config array.
 ```
 
