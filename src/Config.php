@@ -8,7 +8,6 @@ use Psr\Container\ContainerInterface;
 use Psr\Container\NotFoundExceptionInterface;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use function Kipchak\Core\config;
 
 class Config implements Interfaces\Driver
 {
@@ -42,7 +41,6 @@ class Config implements Interfaces\Driver
 
     /**
      * @param string|null $configKey
-     * @param string|null $configFileName
      * @throws ContainerExceptionInterface
      * @throws NotFoundExceptionInterface
      */
