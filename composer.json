@@ -23,5 +23,16 @@
     "prefer-stable": true,
     "require": {
         "kipchak/core": "^2 || ^3"
+    },
+    "extra": {
+        "kipchak": {
+            "type": "driver",
+            "config": null,
+            "configName": null,
+            "initialise": "\\Kipchak\\Driver\\Config\\Config::initialise($container);",
+            "after": [],
+            "before": [],
+            "docs": "https://kipchak.dev/docs/driver-config"
+        }
     }
 }
